@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Expense Tracker</h1>
+    
+        <form  class="from">
+        <label for="title">Enter your Expense Title</label>
+        <input type="text" placeholder="Enter your Expense " class="titleExpenses">
+        <label for="amount">Enter your Amount</label>
+        <input type="number" placeholder="Enter your amount" class="amountExpenses">
+        <label for="Category">Category</label>
+        <select name="Category" id="Category">
+            <option  value="Food">Food</option>
+            <option  value="Study">Study</option>
+            <option  value="Extra">Extra</option>
+            <option  value="Travel">Travel</option>
+        </select>
+        <button type="submit" class="addExpenses">Add Expense</button>
+        <!-- <label for="Search">Search your Task</label> -->
+        <input type="text" placeholder="Search your Expense" class="search">
+        <p class="msg"></p>
+        </form>
+        <div class="bottom">
+       
+        <label for="filterCategory">Filter by Category:</label>
+        <select name="Filter" id="filterCategory">
+            <option value="All">All</option>
+            <option value="Food">Food</option>
+            <option value="Study">Study</option>
+            <option value="Extra">Extra</option>
+            <option value="Travel">Travel</option>
+        </select>
+        </div>
+
+        <p>Total: <span class="total">0</span></p>
+            <ul class="ExpenseList"></ul>
+
+    </div>
+    <script src="head.js"></script>
+</body>
+</html>

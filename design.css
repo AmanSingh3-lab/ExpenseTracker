@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .search{
+    grid-column: span 2;
+} */
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f6f8;
+}
+
+.container{
+    max-width: 800px;
+    margin:40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.from{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:15px;
+    align-items: center;
+}
+
+.from input,
+.from select
+{
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus
+{
+    outline: none;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 5px rgba (76, 175, 80, 0.3);
+}
+
+label{
+    font-weight: 500;
+}
+
+.from button{
+ display: inline-block;
+    justify-self: end;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.2s;
+    font-weight: bold;
+
+    
+}
+.from button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.msg{
+    grid-column: span 2;
+    color:  red;
+    font-size: 14px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd
+
+}
+.total{
+    font-weight: bold;
+    color:#237d32;
+    font-size  : 18px;
+}
+
+.ExpenseList{
+    list-style: none;
+    margin-top:20px;
+}
+.expenseList:empty ::after{
+    content: "NO expenses added yet";
+    display: block;
+    text-align: center;
+    color: grey;
+    margin-top: 20px;
+}
+
+.expense-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.expense-item:hover{
+    transform: scale(1.02);
+}
+
+.edit{
+        background-color: #2196F3;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin-left:5px;
+        cursor: pointer;
+        border-radius: 3px;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit:hover{
+    background-color: #1976D2;
+}
+
+.delete:hover{
+    background: darkred;
+}
